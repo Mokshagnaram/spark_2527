@@ -1,0 +1,754 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+
+.poppins-regular {
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+html, body {
+    height: 100%;
+    width: 100%;
+}
+body {
+   font-family: "Poppins";
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.event-info
+{
+    display: flex;
+    width: 50%;
+    height:auto;
+}
+.left{
+    display: inline;
+    width: 400px;
+    background-color: rgb(181, 28, 28);
+}
+.right{
+    display: inline;
+    width: 400px;
+    background-color: violet;
+}
+.welcome-content {
+    background-image: url("images/logo_main.png"); /* Ensure the correct path */
+    
+    background-size: 700px;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    width: 50vw; /* Ensure it spans full width */
+    height: 400px; /* Adjust height as needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: rgb(177, 19, 19); /* Text remains readable */
+
+}
+
+#home {
+    background: url('images/Untitled\ design-6.png') no-repeat center center/cover;
+    height: 100vh; /* Full-screen height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white; /* Ensure text is readable */
+}
+
+
+.welcome-logo {
+    max-width: 200%; /* Makes it as wide as possible */
+    
+    height: 100px; /* Maintains aspect ratio */
+    display: block;
+    margin: 0 auto 20px auto; /* Centers the logo */
+}
+
+
+
+
+
+
+
+nav {
+    position: fixed; /* Fixes the navbar at the top */
+    top: 0;
+    left: 0;
+    width: 100%; /* Ensures it spans the full width */
+    z-index: 1000; /* Keeps it above other elements */
+    background: linear-gradient(to right, #1d0137, #20013ec0);
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    box-shadow: 0 4px 15px rgba(90, 24, 154, 0.7);
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #111;
+    padding: 5px 30px;
+   
+}
+
+.logo img {
+    height: 50px;
+}
+
+.navbar {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar li {
+    display: inline;
+    margin-right: 5px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #E0AAFF;
+    font-size: 18px;
+    padding: 8px 12px;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    background-color: #E0AAFF;
+    border-radius: 5px;
+    color: #10002B;
+}
+
+
+/* Glowing Registration Banner */
+.registration-banner {
+    background: #560087;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    padding: 15px;
+    margin-top: 70px;
+    margin-bottom: 5px;
+ 
+    box-shadow: 0 0 20px #16001e;
+    animation: glow 1.5s infinite alternate;
+}
+
+/* Glow Animation */
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff;
+    }
+    100% {
+       
+        text-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff;
+    }
+}
+
+
+/* Full-screen Welcome Section */
+#home {
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #fff;
+    color: #333;
+    padding-top: 60px; /* Add padding to account for the fixed header */
+    box-sizing: border-box; /* Ensure padding is included in height */
+}
+
+.welcome-content {
+    max-width: 800px;
+    padding: 20px;
+}
+
+#home h1 {
+    font-size: 5em;
+    margin-bottom: 20px;
+}
+
+#home p {
+    font-size: 1.5em;
+}
+/*event details*/
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ 
+}
+
+/* Section Styling */
+.event-block {
+    background-image: url(Untitled\ design-8.png);
+    background-position: center;
+    background-size: cover;
+    /* background: #000500; */
+    color: rgb(133, 30, 30);
+    padding: 60px 10%;
+    position: relative;
+    text-align: center;
+}
+
+/* Grid Layout */
+.event-info {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: auto;
+    padding-top: 50px;
+
+}
+
+/* Left Box with Highlights */
+.highlight-box {
+    background: linear-gradient(to right, rgba(150, 21, 193, 0.838), rgba(49, 1, 94, 0.913));
+    backdrop-filter: blur(15px);
+    
+    padding: 20px;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    border-radius: 10px;
+    color:#240046;
+    width: 100%;
+    text-align:justify;
+}
+
+.highlight-box p {
+    font-size: 25px;
+    margin: 10px 0;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.highlight-box span {
+    color: #9D4EDD;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+/* Right Side Content */
+.event-description {
+    max-width: 100%;
+
+    
+}
+
+@keyframes gold-shine {
+    0% { text-shadow: 0 0 5px #8c02f5, 0 0 5px #df0000, 0 0 5px #370156; }
+    50% { text-shadow: 0 0 7px #8c02f5, 0 0 7px #ffff00, 0 0 7px #370156; }
+    100% { text-shadow: 0 0 5px #8c02f5, 0 0 5px #df0000, 0 0 5px #370156; }
+}
+
+h2 .Men{
+   color:rgb(177, 19, 19)
+}
+body {
+    background-color: #121212;
+    color: white;
+    text-align: center;
+
+    padding: px;
+}
+
+.event-description h4 {
+    font-size: 18px;
+    color: #fff;
+}
+
+.highlight-box h1 {
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    color: #C77DFF; /* G5d Color */
+    animation: gold-shine 2s infinite alternate;
+}
+
+.event-description p {
+    font-size: 20px;
+    color: #ffffff;
+    text-shadow: #490F19;
+    text-shadow:0 0 5px #1a1a4c;
+    margin: 15px 0;
+    opacity: 0.8;
+}
+
+/* Button */
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background: linear-gradient(45deg, #ff00ff, #ff007f);
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(255, 0, 255, 0.5);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .event-info {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .highlight-box {
+        width: 90%;
+    }
+    
+    .event-description h1 {
+        font-size: 36px;
+    }
+    
+    .event-description p {
+        font-size: 16px;
+    }
+}
+/* scroll section */
+.scroll-wrapper {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    background: transparent;
+    padding: 10px 0;
+    white-space: nowrap;
+    background-color: black;
+}
+
+.scroll-text {
+    display: inline-block;
+    animation: scrollText 10s linear infinite;
+}
+
+.scroll-text span {
+    font-size: 24px;
+    font-weight: bold;
+    color: rgba(238, 200, 8, 0.959);
+    margin-right: 50px;
+    display: inline-block;
+}
+
+@keyframes scrollText {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+/* Countdown Section */
+
+
+
+/* Circular Divs Section */
+/* Circular Divs Section */
+i body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #111;
+    margin: 0;
+    padding: 20px 20px 20px 2; /* Prevents elements from touching screen edges */
+}
+
+.container {
+    display: flex;
+ /* Allows items to wrap on smaller screens */
+    justify-content: center;
+    justify-content: space-between;
+    gap: 50px; /* Further increased spacing between items */
+    max-width: 90vw; /* Ensures items stay within screen */
+    padding : 100px 50px 50px 185px;
+    height: 50%;
+    
+    margin: 20px;
+}
+
+.glowing-container {
+    width: 25%;  /* Adjusts size relative to screen width */
+    max-width: 180px; /* Prevents circles from getting too big */
+    min-width: 100px; /* Ensures minimum size on small screens */
+    height: auto;
+   
+    aspect-ratio: 1/1; /* Ensures a perfect circle */
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    transition: 0.1s ease-in-out;
+    box-shadow: 
+        0px 0px 20px rgba(255, 255, 255, 0.6),
+        0px 0px 40px rgb(122, 5, 200),
+        0px 0px 60px rgba(255, 255, 255, 0.7),
+        0px 0px 80px rgb(122, 5, 200);
+}
+
+.glowing-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 50%;
+}
+
+@keyframes thunder-glow {
+    0%   { box-shadow: 0px 0px 30px rgba(235, 236, 232, 1); }
+    25%  { box-shadow: 0px 0px 50px rgb(122, 5, 200); }
+    40%  { box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.9); }
+    55%  { box-shadow: 0px 0px 60px rgb(122, 5, 200); }
+    70%  { box-shadow: 0px 0px 40px rgba(235, 236, 232, 1); }
+    85%  { box-shadow: 0px 0px 70px rgb(122, 5, 200); }
+    100% { box-shadow: 0px 0px 30px rgba(255, 255, 255, 1); }
+}
+
+.glowing-container:hover {
+    animation: thunder-glow 0.3s infinite steps(8);
+}
+/* Ticket Container */
+.ticket-wrapper {
+    display: flex;
+    justify-content: center; /* Centers tickets */
+    gap: 100px; /* Space between tickets */
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+    margin-top: 30px;
+    padding: 20px;
+}
+
+/* Individual Ticket Styling */
+.ticket-info {
+    background: linear-gradient(135deg,#e2ab06,#935D14); /* Stylish gradient */
+    padding: 35px;
+    border-radius: 15px;
+    box-shadow: 2px 5px 10px rgba(250, 163, 0, 0.825);
+    width: 35%; /* Bigger width */
+    min-width: 280px; /* Prevents them from being too small */
+    text-align: center;
+    color: white; /* White text for contrast */
+    font-family: 'Poppins', sans-serif;
+    transition: transform 0.3s ease-in-out;
+}
+#event-pass{
+    background-image: url(ticket_back.png);
+    background-position: center;
+    }
+#event-pass h2
+{
+    color: gold;
+    margin: 20px;
+}
+/* Hover Effect */
+.ticket-info:hover {
+    transform: scale(1.05); /* Slight zoom effect */
+    background: linear-gradient(to right ,rgb(119, 98, 3),rgb(238, 206, 130));
+    transition-duration: 2.15ms;
+    box-shadow: 10px 10px 10px rgb(214, 182, 4);
+}
+
+/* Ticket Headings */
+.ticket-info h3 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #490F19;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+/* Ticket Details */
+.ticket-info p {
+    font-size: 18px;
+    color: #F9F4F5;
+    margin-bottom: 8px;
+}
+
+/* Price Styling */
+.ticket-info p:last-child {
+    font-size: 22px;
+    font-weight: bold;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 8px;
+    border-radius: 8px;
+    display: inline-block;
+}
+
+/* Responsive Fix for Smaller Screens */
+@media (max-width: 768px) {
+    .ticket-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+    .ticket-info {
+        width: 90%; /* Full width on smaller screens */
+    }
+}
+
+
+
+/* footer content */
+/* footer top */
+        /* Footer Styling */
+        .footer {
+            position: relative;
+            width: 100%;
+            margin: 100px 0px 25px 0px;
+            padding: 40px 20px;
+            text-align: center;
+            backdrop-filter: blur(10px);
+            background: linear-gradient(45deg, #9D4EDD, #240046, #C77DFF);
+            background-size: 200% 200%;
+            animation: backgroundGlow 5s infinite linear alternate;
+            border-top: 3px solid #10002B;
+            box-shadow: 0 -5px 25px rgb(156, 44, 205);
+            border-radius: 15px 15px 0 0;
+        }
+    
+        @keyframes backgroundGlow {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 50% 50%; }
+            100% { background-position: 100% 50%; }
+        }
+    
+        /* Logo Styling */
+        .logo {
+            font-size: 30px;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: white;
+        }
+    
+        .logo span {
+            color: #C77DFF;
+            text-shadow: 0 0 10px #C77DFF, 0 0 20px #C77DFF;
+        }
+    
+        /* Social Icons */
+        .social-icons {
+            margin-top: 10px;
+        }
+    
+        .social-icons a {
+            display: inline-block;
+            margin: 0 15px;
+            font-size: 26px;
+            color: gold;
+            transition: transform 0.3s ease-in-out, text-shadow 0.3s;
+        }
+    
+        .social-icons a:hover {
+            transform: translateY(-5px);
+            text-shadow: 0 0 15px gold, 0 0 25px gold;
+        }
+    
+        /* Contact Info */
+        .contact-info {
+            margin-top: 20px;
+            font-size: 14px;
+            opacity: 0.9;
+        }
+    
+        .contact-info a {
+            color: gold;
+            text-decoration: none;
+            transition: text-shadow 0.3s;
+        }
+    
+        .contact-info a:hover {
+            text-shadow: 0 0 10px gold, 0 0 20px gold;
+        }
+    
+        /* Contact Grid */
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+            text-align: center;
+        }
+    
+        .contact-grid p {
+            margin: 5px 0;
+        }
+    
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .contact-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    
+        @media (max-width: 480px) {
+            .contact-grid {
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+/* Social Icons */
+.social-icons a {
+    color: white;
+    margin: 0 1rem;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #ff3cd5;
+}
+
+.social-btn {
+    text-decoration: none;
+    font-size: 24px;
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+    transition: transform 0.3s, 0.3s;
+}
+
+.social-btn:hover {
+    transform: scale(1.2);
+}
+
+
+/* countdown section */
+
+
+
+.countdown {
+    margin: 100px 250px;
+    width: 50%;
+    display: flex;
+    gap: 30px;
+    font-family: sans-serif;
+}
+  
+  .time-section {
+    text-align: center;
+    font-size: 30px;
+  }
+  
+  .time-group {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .time-segment {
+    display: block;
+    font-size: 100px;
+    font-weight: 900;
+    width: 100px;
+  }
+  
+  .segment-display {
+    position: relative;
+    height: 100%;
+  }
+  
+  .segment-display__top,
+  .segment-display__bottom {
+    overflow: hidden;
+    text-align: center;
+    width: 100%;
+    height: 50%;
+    position: relative;
+  }
+  
+  .segment-display__top {
+    line-height: 1.5;
+    color: #F9F4F5;
+    background-color: #5d131f;
+  }
+  
+  .segment-display__bottom {
+    line-height: 0;
+    color:#F9F4F5;
+    background-color: #490F19;
+  }
+  
+  .segment-overlay {
+    position: absolute;
+    top: 0;
+    perspective: 400px;
+    height: 100%;
+    width: 100px;
+  }
+  
+  .segment-overlay__top,
+  .segment-overlay__bottom {
+    position: absolute;
+    overflow: hidden;
+    text-align: center;
+    width: 100%;
+    height: 50%;
+  }
+  
+  .segment-overlay__top {
+    top: 0;
+    line-height: 1.5;
+    color: #F9F4F5;
+    background-color: #5d131f;
+    transform-origin: bottom;
+  }
+  
+  .segment-overlay__bottom {
+    bottom: 0;
+    line-height: 0;
+    color: #F9F4F5;
+    background-color: #490F19;
+    border-top: 2px solid black;
+    transform-origin: top;
+  }
+  
+  .segment-overlay.flip .segment-overlay__top {
+    animation: flip-top 0.8s linear;
+  }
+  
+  .segment-overlay.flip .segment-overlay__bottom {
+    animation: flip-bottom 0.8s linear;
+  }
+  
+  @keyframes flip-top {
+    0% {
+      transform: rotateX(0deg);
+    }
+    50%,
+    100% {
+      transform: rotateX(-90deg);
+    }
+  }
+  
+  @keyframes flip-bottom {
+    0%,
+    50% {
+      transform: rotateX(90deg);
+    }
+    100% {
+      transform: rotateX(0deg);
+    }
+  }

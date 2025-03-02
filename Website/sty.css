@@ -1,0 +1,628 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+body {
+    font-family: Arial, sans-serif;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+nav {
+    background: linear-gradient(to right, #030303, #2c2b31);
+    
+}
+.event-info
+{
+    display: flex;
+    width: 50%;
+    height:auto;
+}
+.left{
+    display: inline;
+    width: 400px;
+    background-color: black;
+}
+.right{
+    display: inline;
+    width: 400px;
+    background-color: violet;
+}
+.welcome-content {
+    background-image: url("images/WhatsApp_Image_2025-02-11_at_14.03.27-removebg-preview.png"); /* Ensure the correct path */
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    width: 600px; /* Ensure it spans full width */
+    height: 400px; /* Adjust height as needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white; /* Text remains readable */
+
+}
+.welcome-content h1
+{
+   color:rgb(243, 236, 236);
+}
+#home {
+    background: url('images/Untitled\ design-6.png') no-repeat center center/cover;
+    height: 100vh; /* Full-screen height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white; /* Ensure text is readable */
+}
+
+
+.welcome-logo {
+    max-width: 200%; /* Makes it as wide as possible */
+    
+    height: 100px; /* Maintains aspect ratio */
+    display: block;
+    margin: 0 auto 20px auto; /* Centers the logo */
+}
+
+.nav-links ul li::after{
+    content: '';
+    width: 0;
+    height: 4px;
+    background: #fff048;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    
+    width: 100%;
+    
+}
+
+
+nav {
+    position: fixed; /* Fixes the navbar at the top */
+    top: 0;
+    left: 0;
+    width: 100%; /* Ensures it spans the full width */
+    z-index: 1000; /* Keeps it above other elements */
+    background: linear-gradient(to right, #030303, #2c2b31);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #111;
+    padding: 5px 30px;
+}
+
+.logo img {
+    height: 50px;
+}
+
+.navbar {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar li {
+    display: inline;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 8px 12px;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    background-color: #f39c12;
+    border-radius: 5px;
+}
+
+
+/* Full-screen Welcome Section */
+#home {
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #fff;
+    color: #333;
+    padding-top: 60px; /* Add padding to account for the fixed header */
+    box-sizing: border-box; /* Ensure padding is included in height */
+}
+
+.welcome-content {
+    max-width: 800px;
+    padding: 20px;
+}
+
+#home h1 {
+    font-size: 5em;
+    margin-bottom: 20px;
+}
+
+#home p {
+    font-size: 1.5em;
+}
+/*event details*/
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Section Styling */
+.event-block {
+    background: #000500;
+    color: white;
+    padding: 60px 10%;
+    position: relative;
+    text-align: center;
+}
+
+/* Grid Layout */
+.event-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: auto;
+    padding-top: 50px;
+
+}
+
+/* Left Box with Highlights */
+.highlight-box {
+    background: linear-gradient(to right,#5e1f29,#821c2d);
+    padding: 20px;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    border-radius: 10px;
+    color:white;
+    width: 40%;
+    text-align: left;
+}
+
+.highlight-box p {
+    font-size: 22px;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.highlight-box span {
+    color: #ddaa0f;
+    font-size: 26px;
+}
+
+/* Right Side Content */
+.event-description {
+    max-width: 500px;
+    
+}
+
+@keyframes gold-shine {
+    0% { text-shadow: 0 0 5px #FFD700, 0 0 10px #FFD700, 0 0 15px #FFA500; }
+    50% { text-shadow: 0 0 10px #FFD700, 0 0 20px #FFD700, 0 0 30px #FFA500; }
+    100% { text-shadow: 0 0 5px #FFD700, 0 0 10px #FFD700, 0 0 15px #FFA500; }
+}
+
+body {
+    background-color: #121212;
+    color: white;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    padding: px;
+}
+
+.event-description h4 {
+    font-size: 18px;
+    color: #fff;
+}
+
+.event-description h1 {
+    font-size: 50px;
+    font-weight: bold;
+    color: #FFD700; /* Gold Color */
+    animation: gold-shine 2s infinite alternate;
+}
+
+.event-description p {
+    font-size: 18px;
+    color: #93525d;
+    text-shadow: #490F19;
+    text-shadow:0 0 5px #1a1a4c;
+    margin: 15px 0;
+    opacity: 0.8;
+}
+
+/* Button */
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background: linear-gradient(45deg, #ff00ff, #ff007f);
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(255, 0, 255, 0.5);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .event-info {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .highlight-box {
+        width: 90%;
+    }
+    
+    .event-description h1 {
+        font-size: 36px;
+    }
+    
+    .event-description p {
+        font-size: 16px;
+    }
+}
+/* scroll section */
+.scroll-wrapper {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    background: transparent;
+    padding: 10px 0;
+    white-space: nowrap;
+    background-color: black;
+}
+
+.scroll-text {
+    display: inline-block;
+    animation: scrollText 10s linear infinite;
+}
+
+.scroll-text span {
+    font-size: 24px;
+    font-weight: bold;
+    color: rgba(238, 200, 8, 0.959);
+    margin-right: 50px;
+    display: inline-block;
+}
+
+@keyframes scrollText {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+/* Countdown Section */
+
+.countdown {
+    margin: 100px auto;
+    width: 50%;
+    display: flex;
+    gap: 30px;
+    font-family: sans-serif;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .time-section {
+    text-align: center;
+    font-size: 30px;
+  }
+  
+  .time-group {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  
+  .time-segment {
+    display: block;
+    font-size: 100px;
+    font-weight: 900;
+    width: 100px;
+    position: relative;
+  }
+  
+  .segment-display {
+    position: relative;
+    height: 120px; /* Ensure a defined height */
+  }
+  
+  .segment-display__top,
+  .segment-display__bottom {
+    overflow: hidden;
+    text-align: center;
+    width: 100%;
+    height: 50%;
+    position: relative;
+  }
+  
+  .segment-display__top {
+    line-height: 1.5;
+    color: #eee;
+    background-color: #111;
+  }
+  
+  .segment-display__bottom {
+    line-height: 1.2; /* Prevents collapsing */
+    color: #fff;
+    background-color: #333;
+  }
+  
+  .segment-overlay {
+    position: absolute;
+    top: 0;
+    perspective: 800px; /* Increased for smoother animation */
+    height: 100%;
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .segment-overlay__top,
+  .segment-overlay__bottom {
+    position: absolute;
+    overflow: hidden;
+    text-align: center;
+    width: 100%;
+    height: 50%;
+  }
+  
+  .segment-overlay__top {
+    top: 0;
+    line-height: 1.5;
+    color: #fff;
+    background-color: #111;
+    transform-origin: bottom;
+  }
+  
+  .segment-overlay__bottom {
+    bottom: 0;
+    line-height: 1.2;
+    color: #eee;
+    background-color: #333;
+    border-top: 2px solid black;
+    transform-origin: top;
+  }
+  
+  .segment-overlay.flip .segment-overlay__top {
+    animation: flip-top 0.8s linear;
+  }
+  
+  .segment-overlay.flip .segment-overlay__bottom {
+    animation: flip-bottom 0.8s linear;
+  }
+  
+  @keyframes flip-top {
+    0% {
+      transform: rotateX(0deg);
+    }
+    50%,
+    100% {
+      transform: rotateX(-90deg);
+    }
+  }
+  
+  @keyframes flip-bottom {
+    0%,
+    50% {
+      transform: rotateX(90deg);
+    }
+    100% {
+      transform: rotateX(0deg);
+    }
+  }
+  
+
+/* Circular Divs Section */
+#circular-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 50px 20px;
+    background: linear-gradient(to right,#05044f, #180a4e);
+}
+
+.circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.circle:hover {
+    background-color: #555;
+}
+
+.circle span {
+    font-size: 14px;
+    font-weight: bold;
+}
+/* Ticket Container */
+.ticket-wrapper {
+    display: flex;
+    justify-content: center; /* Centers tickets */
+    gap: 100px; /* Space between tickets */
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+    margin-top: 30px;
+    padding: 20px;
+}
+
+/* Individual Ticket Styling */
+.ticket-info {
+    background: linear-gradient(135deg,#e2ab06,#935D14); /* Stylish gradient */
+    padding: 35px;
+    border-radius: 15px;
+    box-shadow: 2px 5px 10px rgba(250, 163, 0, 0.825);
+    width: 35%; /* Bigger width */
+    min-width: 280px; /* Prevents them from being too small */
+    text-align: center;
+    color: white; /* White text for contrast */
+    font-family: 'Poppins', sans-serif;
+    transition: transform 0.3s ease-in-out;
+}
+#event-pass h2
+{
+    color: gold;
+    margin: 20px;
+}
+/* Hover Effect */
+.ticket-info:hover {
+    transform: scale(1.05); /* Slight zoom effect */
+    background: linear-gradient(to right ,rgb(119, 98, 3),rgb(238, 206, 130));
+    transition-duration: 2.15ms;
+    box-shadow: 10px 10px 10px rgb(214, 182, 4);
+}
+
+/* Ticket Headings */
+.ticket-info h3 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #490F19;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+/* Ticket Details */
+.ticket-info p {
+    font-size: 18px;
+    color: #F9F4F5;
+    margin-bottom: 8px;
+}
+
+/* Price Styling */
+.ticket-info p:last-child {
+    font-size: 22px;
+    font-weight: bold;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 8px;
+    border-radius: 8px;
+    display: inline-block;
+}
+
+/* Responsive Fix for Smaller Screens */
+@media (max-width: 768px) {
+    .ticket-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+    .ticket-info {
+        width: 90%; /* Full width on smaller screens */
+    }
+}
+
+
+
+/* footer content */
+/* footer top */
+        /* Footer Styling */
+        .footer {
+            position: relative;
+            width: 100%;
+            margin: 100px 0px 25px 0px;
+            padding: 40px 20px;
+            text-align: center;
+            backdrop-filter: blur(10px);
+            background: linear-gradient(45deg, #e9c307, #0a0a35, #b89e10);
+            background-size: 200% 200%;
+            animation: backgroundGlow 5s infinite linear alternate;
+            border-top: 3px solid rgba(255, 215, 0, 0.8);
+            box-shadow: 0 -5px 25px rgba(255, 215, 0, 0.5);
+            border-radius: 15px 15px 0 0;
+        }
+    
+        @keyframes backgroundGlow {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 50% 50%; }
+            100% { background-position: 100% 50%; }
+        }
+    
+        /* Logo Styling */
+        .logo {
+            font-size: 30px;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: white;
+        }
+    
+        .logo span {
+            color: gold;
+            text-shadow: 0 0 10px gold, 0 0 20px gold;
+        }
+    
+        /* Social Icons */
+        .social-icons {
+            margin-top: 10px;
+        }
+    
+        .social-icons a {
+            display: inline-block;
+            margin: 0 15px;
+            font-size: 26px;
+            color: gold;
+            transition: transform 0.3s ease-in-out, text-shadow 0.3s;
+        }
+    
+        .social-icons a:hover {
+            transform: translateY(-5px);
+            text-shadow: 0 0 15px gold, 0 0 25px gold;
+        }
+    
+        /* Contact Info */
+        .contact-info {
+            margin-top: 20px;
+            font-size: 14px;
+            opacity: 0.9;
+        }
+    
+        .contact-info a {
+            color: gold;
+            text-decoration: none;
+            transition: text-shadow 0.3s;
+        }
+    

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Details</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #111;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+        .event-banner {
+            width: 100%;
+            height: 300px;
+            background: url('dance-event.jpg') center/cover;
+        }
+        .event-container {
+            max-width: 800px;
+            background: #222;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0px 10px 20px rgba(255, 255, 255, 0.2);
+            margin-top: -50px;
+            z-index: 10;
+        }
+        .event-title {
+            font-size: 28px;
+            font-weight: bold;
+            color: #f39c12;
+        }
+        .event-club {
+            font-size: 18px;
+            color: #ddd;
+        }
+        .event-prize {
+            font-size: 20px;
+            color: #ffcc00;
+            margin: 10px 0;
+        }
+        .event-description {
+            font-size: 16px;
+            margin: 15px 0;
+            line-height: 1.6;
+        }
+        .event-meta {
+            font-size: 16px;
+            color: #bbb;
+            margin-top: 15px;
+        }
+        .register-btn {
+            display: inline-block;
+            padding: 12px 20px;
+            background: #f39c12;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 18px;
+            margin-top: 15px;
+            transition: 0.3s;
+        }
+        .register-btn:hover {
+            background: #ffcc00;
+            color: #000;
+        }
+    </style>
+</head>
+<body>
+    <div class="event-banner"></div>
+    <div class="event-container">
+        <div class="event-title">Red Light Green Light</div>
+        <div class="event-club">Organized by: VIT Dance Club</div>
+        <div class="event-prize">🏆 Prize: ₹1,75,000</div>
+        <div class="event-description">
+            Join us for the most thrilling group dance competition! Teams will battle it out through elimination rounds until the final showdown. Show your best moves and win big!
+        </div>
+        <div class="event-meta">
+            📅 Date: 20/2/2025<br>
+            ⏰ Time: 6:00 PM - 9:00 PM<br>
+            📍 Location: Main Auditorium<br>
+            💰 Entry Fee: Rs. 250/-
+        </div>
+        <a href="#" class="register-btn">Register Now</a>
+    </div>
+</body>
+</html>

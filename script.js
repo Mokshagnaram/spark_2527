@@ -183,3 +183,8 @@ var TrandingSlider = new Swiper('.tranding-slider', {
     prevEl: '.swiper-button-prev',
   }
 });
+
+
+document.querySelector(".menu-icon").addEventListener("click", function () {
+  document.querySelector(".navbar").classList.toggle("active");
+});

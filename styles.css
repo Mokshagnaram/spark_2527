@@ -41,43 +41,45 @@ body {
     background-color: violet;
 }
 .welcome-content {
-    background-image: url("images/logo_main.png"); /* Ensure the correct path */
-    
-    background-size: 700px;
+    background-image: url("images/logo_main.png"); 
+    background-size: 80%; /* Adjusts based on screen width */
     background-position: center; 
     background-repeat: no-repeat; 
-    width: 50vw; /* Ensure it spans full width */
-    height: 400px; /* Adjust height as needed */
+    width: 80vw; /* Adapts to screen width */
+    max-width: 600px; /* Prevents it from being too large */
+    height: 300px; /* Adjusted for better scaling */
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    color: rgb(177, 19, 19); /* Text remains readable */
+    color: rgb(177, 19, 19);
+}
 
+/* Responsive Design */
+@media (max-width: 768px) {
+    .welcome-content {
+        width: 90vw;
+        height: 250px;
+        background-size: 70%;
+    }
 }
 
 #home {
     background: url('images/Untitled\ design-6.png') no-repeat center center/cover;
-    height: 100vh; /* Full-screen height */
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    color: white; /* Ensure text is readable */
+    color: white;
 }
-
 
 .welcome-logo {
-    max-width: 200%; /* Makes it as wide as possible */
-    
-    height: 100px; /* Maintains aspect ratio */
+    max-width: 100%; /* Keeps it within bounds */
+    height: auto; /* Maintains aspect ratio */
     display: block;
-    margin: 0 auto 20px auto; /* Centers the logo */
+    margin: 0 auto 20px auto;
 }
-
-
-
-
 
 
 
@@ -132,7 +134,43 @@ nav {
     border-radius: 5px;
     color: #10002B;
 }
+@media (max-width: 768px) {
+    .navbar {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background: #111;
+        text-align: center;
+        padding: 10px 0;
+    }
 
+    /* Show navbar when menu is active */
+    .navbar.active {
+        display: flex;
+    }
+
+    .navbar li {
+        display: block;
+        margin: 10px 0;
+    }
+}
+
+/* Hamburger Menu */
+.menu-icon {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: #E0AAFF;
+}
+
+@media (max-width: 768px) {
+    .menu-icon {
+        display: block;
+    }
+}
 
 /* Glowing Registration Banner */
 .registration-banner {
@@ -314,7 +352,14 @@ body {
 }
 
 /* Responsive */
-@media (max-width: 600px) {
+@media (max-width: 768px) {
+    highlight-box h1 {
+        text-align: center;
+        font-size: 5px;
+        font-weight: bold;
+        color: #C77DFF; /* G5d Color */
+        animation: gold-shine 2s infinite alternate;
+    }
     .event-info {
         flex-direction: column;
         text-align: center;
@@ -333,7 +378,7 @@ body {
     }
 }
 /* scroll section */
-.scroll-wrapper {
+/* .scroll-wrapper {
     width: 100%;
     overflow: hidden;
     position: relative;
@@ -363,7 +408,7 @@ body {
     to {
         transform: translateX(-100%);
     }
-}
+} */
 
 /* Countdown Section */
 
@@ -371,7 +416,7 @@ body {
 
 /* Circular Divs Section */
 /* Circular Divs Section */
-i body {
+/* i body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -379,16 +424,16 @@ i body {
     min-height: 100vh;
     background-color: #111;
     margin: 0;
-    padding: 20px 20px 20px 2; /* Prevents elements from touching screen edges */
+    padding: 20px 20px 20px 2; /* Prevents elements from touching screen edges 
 }
 
 .container {
     display: flex;
- /* Allows items to wrap on smaller screens */
+ Allows items to wrap on smaller screens
     justify-content: center;
     justify-content: space-between;
-    gap: 50px; /* Further increased spacing between items */
-    max-width: 90vw; /* Ensures items stay within screen */
+    gap: 50px; /* Further increased spacing between items *
+    max-width: 90vw; /* Ensures items stay within screen 
     padding : 100px 50px 50px 185px;
     height: 50%;
     
@@ -396,12 +441,12 @@ i body {
 }
 
 .glowing-container {
-    width: 25%;  /* Adjusts size relative to screen width */
-    max-width: 180px; /* Prevents circles from getting too big */
-    min-width: 100px; /* Ensures minimum size on small screens */
+    width: 25%;  /* Adjusts size relative to screen width 
+    max-width: 180px; /* Prevents circles from getting too big 
+    min-width: 100px; /* Ensures minimum size on small screens 
     height: auto;
    
-    aspect-ratio: 1/1; /* Ensures a perfect circle */
+    aspect-ratio: 1/1; 
     border-radius: 50%;
     overflow: hidden;
     position: relative;
@@ -433,7 +478,10 @@ i body {
 
 .glowing-container:hover {
     animation: thunder-glow 0.3s infinite steps(8);
-}
+} */
+
+
+
 /* Ticket Container */
 .ticket-wrapper {
     display: flex;
@@ -502,6 +550,15 @@ i body {
 
 /* Responsive Fix for Smaller Screens */
 @media (max-width: 768px) {
+   
+
+
+
+
+
+
+
+
     .ticket-wrapper {
         flex-direction: column;
         align-items: center;
@@ -638,117 +695,193 @@ i body {
 
 /* countdown section */
 
-
-
 .countdown {
-    margin: 100px 250px;
-    width: 50%;
+    width: 90%;
+    max-width: 600px;
+    margin: 50px auto;
     display: flex;
-    gap: 30px;
+    gap: 20px;
     font-family: sans-serif;
 }
-  
-  .time-section {
+
+.time-section {
     text-align: center;
-    font-size: 30px;
-  }
-  
-  .time-group {
+    font-size: 2rem;
+}
+
+.time-group {
     display: flex;
     gap: 10px;
-  }
-  
-  .time-segment {
+}
+
+.time-segment {
     display: block;
-    font-size: 100px;
+    font-size: 6vw;
     font-weight: 900;
-    width: 100px;
-  }
-  
-  .segment-display {
+    width: 80px;
+}
+
+.segment-display {
     position: relative;
     height: 100%;
-  }
-  
-  .segment-display__top,
-  .segment-display__bottom {
+}
+
+/* Flip Effects */
+.segment-display__top,
+.segment-display__bottom {
     overflow: hidden;
     text-align: center;
     width: 100%;
     height: 50%;
     position: relative;
-  }
-  
-  .segment-display__top {
+}
+
+.segment-display__top {
     line-height: 1.5;
     color: #F9F4F5;
     background-color: #5d131f;
-  }
-  
-  .segment-display__bottom {
+}
+
+.segment-display__bottom {
     line-height: 0;
-    color:#F9F4F5;
+    color: #F9F4F5;
     background-color: #490F19;
-  }
-  
-  .segment-overlay {
+}
+
+.segment-overlay {
     position: absolute;
     top: 0;
     perspective: 400px;
     height: 100%;
-    width: 100px;
-  }
-  
-  .segment-overlay__top,
-  .segment-overlay__bottom {
+    width: 80px;
+}
+
+.segment-overlay__top,
+.segment-overlay__bottom {
     position: absolute;
     overflow: hidden;
     text-align: center;
     width: 100%;
     height: 50%;
-  }
-  
-  .segment-overlay__top {
+}
+
+.segment-overlay__top {
     top: 0;
     line-height: 1.5;
     color: #F9F4F5;
     background-color: #5d131f;
     transform-origin: bottom;
-  }
-  
-  .segment-overlay__bottom {
+}
+
+.segment-overlay__bottom {
     bottom: 0;
     line-height: 0;
     color: #F9F4F5;
     background-color: #490F19;
     border-top: 2px solid black;
     transform-origin: top;
-  }
-  
-  .segment-overlay.flip .segment-overlay__top {
+}
+
+/* Flip Animations */
+.segment-overlay.flip .segment-overlay__top {
     animation: flip-top 0.8s linear;
-  }
-  
-  .segment-overlay.flip .segment-overlay__bottom {
+}
+
+.segment-overlay.flip .segment-overlay__bottom {
     animation: flip-bottom 0.8s linear;
-  }
-  
-  @keyframes flip-top {
+}
+
+@keyframes flip-top {
     0% {
-      transform: rotateX(0deg);
+        transform: rotateX(0deg);
     }
     50%,
     100% {
-      transform: rotateX(-90deg);
+        transform: rotateX(-90deg);
     }
-  }
-  
-  @keyframes flip-bottom {
+}
+
+@keyframes flip-bottom {
     0%,
     50% {
-      transform: rotateX(90deg);
+        transform: rotateX(90deg);
     }
     100% {
-      transform: rotateX(0deg);
+        transform: rotateX(0deg);
     }
-  }
+}
+
+/* Mobile Optimization */
+@media (max-width: 768px) {
+
+    .countdown {
+        width: 90%;
+        max-width: 100px;
+        margin: 50px auto;
+        display: flex;
+        gap: 20px;
+        font-family: sans-serif;
+    }
+    
+    
+  
+    .time-segment {
+        display: block;
+        font-size: 6vw;
+        font-weight: 900;
+        width: 80px;
+    }
+    
+    .segment-display {
+        position: relative;
+        height: 100%;
+    }
+    
+    /* Flip Effects */
+    .segment-display__top,
+    .segment-display__bottom {
+        overflow: hidden;
+        text-align: center;
+        width: 105%;
+        height: 50%;
+        position: relative;
+    }
+    
+
+    
+    .segment-overlay {
+        position: absolute;
+        top: 0;
+        perspective: 400px;
+        height: 100%;
+        width: 80px;
+    }
+    
+    .segment-overlay__top,
+    .segment-overlay__bottom {
+        position: absolute;
+        overflow: hidden;
+        text-align: center;
+        width: 100%;
+        height: 50%;
+    }
+    
+
+
+
+    .countdown {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        margin: 100px auto;
+    }
+
+    .time-group {
+        gap: 5px;
+    }
+
+    .time-segment {
+        font-size: 8vw;
+        width: 70px;
+    }
+}

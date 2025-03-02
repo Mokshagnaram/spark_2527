@@ -85,6 +85,44 @@ nav {
     border-radius: 5px;
     color: #10002B;
 }
+@media (max-width: 768px) {
+    body{
+        overflow-x: hidden;
+    }
+    .navbar {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background: #111;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    /* Show navbar when menu is active */
+    .navbar.active {
+        display: flex;
+    }
+
+    .navbar li {
+        display: block;
+        margin: 10px 0;
+    }
+}
+.menu-icon {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: #E0AAFF;
+}
+
+@media (max-width: 768px) {
+    .menu-icon {
+        display: inline;
+    }
+}
 
         * {
             margin: 0;
@@ -190,6 +228,84 @@ nav {
             0% { transform: translateY(0px) translateX(0px); }
             100% { transform: translateY(20px) translateX(20px); }
         }
+
+
+        /* Responsive Design */
+@media (max-width: 1024px) {
+    .hero h1 {
+        font-size: 2.8rem;
+    }
+
+    .info {
+        padding: 60px 8%;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        height: 80vh;
+    }
+
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+
+    .info {
+        padding: 40px 5%;
+        border-radius: 15px;
+    }
+
+    .info::before, .info::after {
+        width: 150px;
+        height: 150px;
+        filter: blur(50px);
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 1.8rem;
+        text-shadow: 2px 2px 5px rgb(187, 0, 255);
+    }
+
+    .info {
+        padding: 30px 5%;
+        box-shadow: 0 5px 15px rgb(63, 0, 109);
+    }
+}
+
+/* Smooth Fade-in Effect for Hero */
+.hero {
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.95); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+/* Fixing Text Readability */
+.hero h1, .info {
+    text-align: center;
+    line-height: 1.5;
+}
+
+/* Button Styling for Hero (If needed) */
+.hero-btn {
+    background: #ff00cc;
+    color: white;
+    font-size: 20px;
+    padding: 12px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.hero-btn:hover {
+    background: #d600b3;
+    transform: scale(1.05);
+}
+
 
         /* About Section Text */
         .info h2 {
@@ -375,6 +491,7 @@ transform: scale(1.2);
                 <li><a href="pro.html">Pro Show</a></li>
                 <li><a href="celebrity-shows.html">Celebrity show</a></li>
             </ul>
+            <div class="menu-icon">&#9776;</div>
         </nav>
     </header>
     <!-- Hero Section -->
@@ -444,7 +561,7 @@ transform: scale(1.2);
     <!-- FontAwesome for Icons -->
     
     
-    <script src="script.js"></script>
+    
     <script>
         document.addEventListener("DOMContentLoaded", function () {
             const heroSection = document.querySelector(".hero");
@@ -479,6 +596,10 @@ transform: scale(1.2);
                 }
             });
         });
+        document.querySelector(".menu-icon").addEventListener("click", function () {
+  document.querySelector(".navbar").classList.toggle("active");
+});
     </script>
+    <script src="script.js"></script>
 </body>
 </html>

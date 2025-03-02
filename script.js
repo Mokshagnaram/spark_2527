@@ -112,6 +112,13 @@ const countdownTimer = setInterval(() => {
 }, 1000);
 
 updateAllSegments();
+
+
+document.querySelector(".menu-icon").addEventListener("click", function () {
+  document.querySelector(".navbar").classList.toggle("active");
+});
+
+
 const images = [
     ["images/celeb1.png", "images/celeb3.png", "images/celeb5.png"], // Carousel 1 images
     ["images/celeb2.png", "images/celeb4.png", "images/celeb6.png"]  // Carousel 2 images
@@ -185,6 +192,15 @@ var TrandingSlider = new Swiper('.tranding-slider', {
 });
 
 
-document.querySelector(".menu-icon").addEventListener("click", function () {
-  document.querySelector(".navbar").classList.toggle("active");
+
+document.addEventListener("DOMContentLoaded", function () {
+  const menuIcon = document.querySelector(".menu-icon");
+  const navbar = document.querySelector(".navbar");
+
+  menuIcon.addEventListener("click", function () {
+      navbar.classList.toggle("active");
+
+      // Toggle class to change menu icon (optional)
+      menuIcon.classList.toggle("open");
+  });
 });

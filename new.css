@@ -1,0 +1,65 @@
+/* General styles */
+body {
+    background-color: #121212;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    background-color: #1e1e1e;
+    padding: 20px;
+    font-size: 24px;
+}
+
+/* Event container */
+.event-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+/* Image */
+.event-image img {
+    width: 300px;
+    border-radius: 10px;
+}
+
+/* Event details */
+.event-details {
+    margin-left: 20px;
+    text-align: left;
+}
+
+/* Price */
+.price {
+    font-size: 20px;
+    font-weight: bold;
+    color: #bdbdbd;
+}
+
+/* Button */
+button {
+    background-color: #6200ea;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #3700b3;
+}
+
+/* Footer */
+footer {
+    background-color: #1e1e1e;
+    padding: 10px;
+    margin-top: 20px;
+}

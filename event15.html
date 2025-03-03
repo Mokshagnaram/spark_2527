@@ -246,6 +246,42 @@
                 height: 300px;
             }
         }
+        @media (max-width: 768px) {
+    .bottom-box {
+        flex-direction: column; /* Stack items vertically */
+        text-align: center; /* Center align content */
+        gap: 15px; /* Add spacing between items */
+        padding: 15px; /* Adjust padding */
+    }
+}
+
+
+        @media (max-width: 768px) {
+            .container {
+                width: 95%;
+            }
+
+            .content {
+                flex-direction: column;
+            }
+
+            .event-image img {
+                width: 100%;
+                height: 300px;
+            }
+        }
+        @media (max-width: 768px) {
+    .event-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .event-card {
+        width: 90%; /* Adjusts to nearly full width */
+        max-width: none; /* Removes max-width restriction */
+    }
+}
     </style>
 </head>
 <body>

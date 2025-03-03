@@ -19,13 +19,15 @@
                 <!-- Add your logo image here -->
                 <a href="index.html"><img src="images/SVCE WHITE NAME.png" alt="Spark Fest Logo"></a>
             </div>
+            <div class="menu-icon">&#9776;</div>
                         <ul class = "navbar">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="sports.html">Sports</a></li>
                 <li><a href="fun-events.html ">Fun events</a></li>
                 <li><a href="pro.html">Pro Show</a></li>
-                <li><a href="celebrity-shows.html" class ="m">Celebrity show</a></li>
+                <li><a href="culturals.html">Culturals</a></li>
             </ul>
+            
         </nav>
     </header>
 
@@ -284,6 +286,12 @@
             </div> -->
         </div>
     </footer>
+    <script>
+    
+        document.querySelector(".menu-icon").addEventListener("click", function () {
+  document.querySelector(".navbar").classList.toggle("active");
+});
+    </script>
 
 </body>
 </html>

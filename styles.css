@@ -353,6 +353,19 @@ body {
 
 /* Responsive */
 @media (max-width: 768px) {
+
+    .highlight-box p {
+        font-size: 10px;
+ 
+       
+    }
+    .highlight-box span {
+        font-size: 10px;
+ 
+       
+    }
+
+
     highlight-box h1 {
         text-align: center;
         font-size: 5px;

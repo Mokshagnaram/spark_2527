@@ -488,6 +488,19 @@ i body {
         0px 0px 40px rgb(122, 5, 200),
         0px 0px 60px rgba(255, 255, 255, 0.7),
         0px 0px 80px rgb(122, 5, 200);
+        display: flex; /* Enables flexbox */
+    align-items: center; /* Centers content vertically */
+    justify-content: center; /* Centers content horizontally */
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    position: relative;
+    width: 180px; /* Adjust size */
+    height: 180px;
+    border-radius: 50%;
+    overflow: hidden;
 }
 
 /* Ensure images inside the container fit properly */
@@ -500,7 +513,10 @@ i body {
 }
 
 
-
+.glowing-container span {
+    position: relative; /* Ensures text stays on top */
+    z-index: 2; /* Keeps text visible above image */
+}
 
 @keyframes thunder-glow {
     0%   { box-shadow: 0px 0px 30px rgba(235, 236, 232, 1); }

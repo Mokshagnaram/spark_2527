@@ -429,7 +429,7 @@ body {
 
 /* Circular Divs Section */
 /* Circular Divs Section */
-/* i body {
+i body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -437,33 +437,52 @@ body {
     min-height: 100vh;
     background-color: #111;
     margin: 0;
-    padding: 20px 20px 20px 2; /* Prevents elements from touching screen edges 
+    padding: 20px 20px 20px 2; /* Prevents elements from touching screen edges */
 }
 
 .container {
     display: flex;
- Allows items to wrap on smaller screens
-    justify-content: center;
-    justify-content: space-between;
-    gap: 50px; /* Further increased spacing between items *
-    max-width: 90vw; /* Ensures items stay within screen 
-    padding : 100px 50px 50px 185px;
-    height: 50%;
-    
-    margin: 20px;
+    flex-wrap: wrap;
+    justify-content: center; /* Centers items */
+    gap: 50px;
+    max-width: 90vw;
+    padding: 50px;
+    margin: 20px auto;
 }
 
+
+.one{
+    background-image: url(images/sport.png);
+    
+    background-position: right;
+    background-size: cover;
+}
+.two{
+    background-image: url(images/cult.png);
+    background-position: center;
+    background-size: cover;
+}
+.three{
+    background-image: url(images/fun.png);
+    background-position: center;
+     background-size: cover;
+}
+.four{
+    background-image: url(images/pro.png);
+    background-position: top;
+     background-size: cover;
+}
 .glowing-container {
-    width: 25%;  /* Adjusts size relative to screen width 
-    max-width: 180px; /* Prevents circles from getting too big 
-    min-width: 100px; /* Ensures minimum size on small screens 
-    height: auto;
-   
-    aspect-ratio: 1/1; 
+    width: 22vw; /* Responsive width */
+    max-width: 180px;  
+    min-width: 100px;  
+    height: 22vw; /* Ensures it's a perfect circle */
+    max-height: 180px;
+    min-height: 100px;
     border-radius: 50%;
     overflow: hidden;
     position: relative;
-    transition: 0.1s ease-in-out;
+    transition: 0.3s ease-in-out;
     box-shadow: 
         0px 0px 20px rgba(255, 255, 255, 0.6),
         0px 0px 40px rgb(122, 5, 200),
@@ -471,13 +490,17 @@ body {
         0px 0px 80px rgb(122, 5, 200);
 }
 
+/* Ensure images inside the container fit properly */
 .glowing-container img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: cover; /* Ensures images are not stretched */
     display: block;
     border-radius: 50%;
 }
+
+
+
 
 @keyframes thunder-glow {
     0%   { box-shadow: 0px 0px 30px rgba(235, 236, 232, 1); }
@@ -491,8 +514,26 @@ body {
 
 .glowing-container:hover {
     animation: thunder-glow 0.3s infinite steps(8);
-} */
+}
 
+/* Responsive Design */
+@media (max-width: 768px) {
+    .glowing-container {
+        width: 30vw;
+        height: 30vw;
+        max-width: 150px;
+        max-height: 150px;
+    }
+}
+
+@media (max-width: 480px) {
+    .glowing-container {
+        width: 40vw;
+        height: 40vw;
+        max-width: 120px;
+        max-height: 120px;
+    }
+}
 
 
 /* Ticket Container */
@@ -898,3 +939,26 @@ body {
         width: 70px;
     }
 }
+
+/* 
+
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+
+::-webkit-scrollbar-thumb {
+    background: transparent; 
+    border-radius: 10px; 
+    transition:  0.3s ease-in-out;
+    visibility: hidden;
+}
+
+:hover::-webkit-scrollbar-thumb,
+:active::-webkit-scrollbar-thumb {
+    background: #6a0dad;
+    visibility: visible;
+} */
+

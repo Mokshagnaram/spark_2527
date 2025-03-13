@@ -1,4 +1,4 @@
-const targetDate = new Date('March 21, 2025 00:00:00').getTime();
+const targetDate = new Date('March 22, 2025 00:00:00').getTime();
 //targetDate.setHours(targetDate.getHours() + 120); // Set target date to 5 days from now for testing
 
 function getTimeSegmentElements(segmentElement) {
